@@ -22,7 +22,7 @@ public class Jugador extends Futbolista implements Comparable<Object>{
 
 	
 
-	@Override
+	
 	public int compareTo(Futbolista fut) {
 		
 		return this.getEdad()-fut.getEdad();

@@ -33,10 +33,10 @@ public class Portero extends Futbolista implements Comparable<Object>{
 	}
 
 	public int compareTo(Portero f) {
-		return this.golesRecibidos - f.golesRecibidos;
+		return f.golesRecibidos - this.golesRecibidos;
 	}
 
-	@Override
+	
 	public int compareTo(Object o) {
 		// TODO Auto-generated method stub
 		return 0;
