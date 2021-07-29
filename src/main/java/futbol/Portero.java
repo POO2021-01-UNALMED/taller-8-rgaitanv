@@ -1,6 +1,6 @@
 package futbol;
 
-public class Portero extends Futbolista implements Comparable<Futbolista>{
+public class Portero extends Futbolista implements Comparable<Object>{
 	
 	public short golesRecibidos;
 	public byte dorsal;
@@ -34,6 +34,12 @@ public class Portero extends Futbolista implements Comparable<Futbolista>{
 
 	public int compareTo(Portero f) {
 		return this.golesRecibidos - f.golesRecibidos;
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }
